@@ -268,4 +268,80 @@
 }
 .work-info .work-right button {
   padding: 10px 30px;
+}
+
+.plan {
+  height: 700px;
+}
+
+.plan-info {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.plan-info > h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+.plan-info > p {
+  margin: 10px auto;
+  margin-bottom: 45px;
+  width: 70%;
+  text-align: center;
+}
+.plan-info .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.plan-info .cards .card {
+  box-shadow: 0px 0px 3px 1px rgba(255, 228, 146, 0.5490196078);
+  padding: 30px 20px;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+.plan-info .cards .card h3 {
+  margin: 9px 0;
+}
+.plan-info .cards .card:hover {
+  background-color: var(--main-bg-color);
+  cursor: pointer;
+  color: #fff;
+  transform: scale(1.1);
+}
+.plan-info .cards .card:hover h3 {
+  color: var(--color-2);
+}
+.plan-info .cards .card:hover button {
+  background-color: var(--color-1);
+  color: #fff;
+  box-shadow: none;
+}
+.plan-info .cards .card:hover ul li i {
+  color: var(--color-2);
+}
+.plan-info .cards .card ul {
+  list-style-type: none;
+}
+.plan-info .cards .card ul li {
+  margin: 15px 0;
+}
+.plan-info .cards .card button {
+  box-shadow: 0px 0px 3px 1px rgba(255, 228, 146, 0.5490196078);
+  border: none;
+  background: none;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.plan-info .cards .card button:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.plan-info .cards .card button:active {
+  transition: 0.1s;
+  transform: scale(0.9);
 }/*# sourceMappingURL=main.css.map */
